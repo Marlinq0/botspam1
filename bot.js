@@ -10,7 +10,7 @@ let channel = client.channels.get("682211432019787783")
 channel.send(`سبحان الله`);
 }, 6000)
   setInterval(function() {
-channel.send(`How are You`+Math.random());
+channel.send(`How are You`);
 }, 30000)
 setInterval(function() {
 channel.send(`Im fine`);
@@ -51,12 +51,3 @@ channel.send(`#profile`);
 })
 
 
-client.on("message", function(message) {
-    var args = message.content.split(/ +/g);
-    var command = args.shift()
-    
-    if(command == ".1s") {
-        message.channel.send(args.slice(1, args.length).join(" "))    
-    }
-});
-client.login(process.env.BOT_TOKEN); 
