@@ -10,7 +10,7 @@ let channel = client.channels.get("682211432019787783")
 channel.send(`سبحان الله`);
 }, 6000)
   setInterval(function() {
-channel.send(`How are You`);
+channel.send(`How are You`+Math.random());
 }, 30000)
 setInterval(function() {
 channel.send(`Im fine`);
