@@ -1,6 +1,7 @@
  const Discord = require('discord.js');
 const client = new Discord.Client();
 console.log("Scrpit By Dream");
+client.login(process.env.BOT_TOKEN); 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -48,4 +49,5 @@ channel.send(`becaues your ferless and i don't like you`);
 channel.send(`#profile`);
 }, 6000)
 })
+
 
