@@ -51,7 +51,7 @@ client.on('ready',async () => {
 console.log("Conneted to room..");
    setInterval(function() {
 channel.send(`#profile`);
-}, 6000)
+}, 10000)
   let daily = client.channels.get("684039022393294872")
     setInterval(function() {
      console.log("Daily");
