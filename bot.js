@@ -5,7 +5,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-let channel = client.channels.get("682211432019787783")
+let channel = client.channels.get("684142664651898944")
     setInterval(function() {
 channel.send(`سبحان الله`+Math.random());
 }, 6000)
