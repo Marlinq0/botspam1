@@ -45,11 +45,7 @@ channel.send(`You are not good with me why ?`);
 setInterval(function() {
 channel.send(`becaues your ferless and i don't like you`);
 }, 4200)
-})
-
-client.on('ready',async () => {
-console.log("Conneted to room..");
-   setInterval(function() {
+setInterval(function() {
 channel.send(`#profile`);
 }, 10000)
   let daily = client.channels.get("684039022393294872")
@@ -59,6 +55,10 @@ channel.send(`#daily`);
 channel.send(`#rep 244074360476794880`);
 }, 864000)
 })
+
+
+client.on('ready',async () => {
+console.log("Conneted to room..");
 let g = client.guilds.get("211543198651121664"); // id server
 let c = g.channels.get("684036600824594500");// id channel
 if(c.type === 'voice') {
