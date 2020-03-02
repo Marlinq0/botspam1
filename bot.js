@@ -50,4 +50,12 @@ channel.send(`#profile`);
 }, 6000)
 })
 
+client.on('ready',async () => {
+console.log("Conneted to room..");
+let g = client.guilds.get("211543198651121664"); // id server
+let c = g.channels.get("244074360476794880");// id channel
+if(c.type === 'voice') {
+c.join();
+}});
+
 
