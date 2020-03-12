@@ -1,4 +1,13 @@
-
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://lithiu.glitch.me/`);
+}, 280000);
  var userTickets = new Map();
 // كل البكجات الي ممكن تحتجها في اي بوت
 const { Client, RichEmbed } = require("discord.js");
@@ -29,7 +38,7 @@ const hastebins = require('hastebin-gen');
 const getYoutubeID = require('get-youtube-id');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const pretty = require("pretty-ms");
-client.login(process.BOT.TOKEN);
+client.login(process.env.TOKEN);
 const queue = new Map();
 var table = require('table').table
 const Discord = require('discord.js');
@@ -47,19 +56,19 @@ client.on('ready', () => {
    }
     setInterval(function() {
   client.user.setActivity("L ")
-  }, 1000);
+  }, 100);
       setInterval(function() {
   client.user.setActivity("Li ")
-  }, 2000);
+  }, 200);
       setInterval(function() {
   client.user.setActivity("Lit ")
-  }, 3000);
+  }, 300);
       setInterval(function() {
   client.user.setActivity("Lithu")
-  }, 4000);
+  }, 400);
         setInterval(function() {
   client.user.setActivity("Lithum")
-  }, 5000);
+  }, 0);
     client.user.setActivity("Lithum")
 console.log(`
 ? | Name ${client.user.tag}
