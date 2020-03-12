@@ -47,19 +47,19 @@ client.on('ready', () => {
    }
     setInterval(function() {
   client.user.setActivity("L ")
-  }, 100);
+  }, 1000);
       setInterval(function() {
   client.user.setActivity("Li ")
-  }, 200);
+  }, 2000);
       setInterval(function() {
   client.user.setActivity("Lit ")
-  }, 300);
+  }, 3000);
       setInterval(function() {
   client.user.setActivity("Lithu")
-  }, 400);
+  }, 4000);
         setInterval(function() {
   client.user.setActivity("Lithum")
-  }, 0);
+  }, 5000);
     client.user.setActivity("Lithum")
 console.log(`
 ? | Name ${client.user.tag}
