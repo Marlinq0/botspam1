@@ -29,7 +29,7 @@ const hastebins = require('hastebin-gen');
 const getYoutubeID = require('get-youtube-id');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const pretty = require("pretty-ms");
-client.login(process.env.TOKEN);
+client.login(process.BOT.TOKEN);
 const queue = new Map();
 var table = require('table').table
 const Discord = require('discord.js');
