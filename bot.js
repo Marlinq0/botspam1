@@ -1,4 +1,7 @@
  const Discord = require('discord.js');
+const random = require('random');
+const dateFormat = require('dateformat');//npm i dateformat
+const jsonfile = require('jsonfile');
 const client = new Discord.Client();
 console.log("Scrpit By Dream");
 client.login(process.env.BOT_TOKEN); 
